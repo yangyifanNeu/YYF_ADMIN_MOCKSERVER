@@ -1,0 +1,38 @@
+[
+  
+  {
+    "path": "/form",
+    "id": "form",
+    "icon": "form",
+    "label": "表单",
+    "component": "Basiclayout",
+    "children": [
+      {
+        "path": "/form/basicForm",
+        "id": "basicForm",
+        "icon": null,
+        "component": "/form/BasicForm.vue",
+        "label": "基本表单"
+      },
+      {
+        "path": "/form/validateForm",
+        "component": "/form/ValidateForm.vue",
+        "icon": null,
+        "label": "校验表单",
+        "id": "ValidateForm"
+      }
+    ]
+  },{
+    "path":"/dashboard",
+    "component":"Basiclayout",
+    "id":"dashboard",
+    "label":"仪表盘",
+    "children":[{
+      "path":"/dashboard/analyze",
+      "id":"analyze",
+      "component":"/dashboard/analyze",
+      "label":"分析页"
+    }]
+  }
+  
+]
