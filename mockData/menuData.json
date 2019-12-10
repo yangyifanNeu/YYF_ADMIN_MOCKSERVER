@@ -1,5 +1,4 @@
 [
-  
   {
     "path": "/form",
     "id": "form",
@@ -22,17 +21,47 @@
         "id": "ValidateForm"
       }
     ]
-  },{
-    "path":"/dashboard",
-    "component":"Basiclayout",
-    "id":"dashboard",
-    "label":"仪表盘",
-    "children":[{
-      "path":"/dashboard/analyze",
-      "id":"analyze",
-      "component":"/dashboard/analyze",
-      "label":"分析页"
-    }]
+  },
+  {
+    "path": "/dashboard",
+    "component": "Basiclayout",
+    "id": "dashboard",
+    "label": "仪表盘",
+    "children": [
+      {
+        "path": "/dashboard/analyze",
+        "id": "analyze",
+        "component": "/dashboard/analyze",
+        "label": "分析页"
+      }
+    ]
+  },
+  {
+    "path": "/grid",
+    "component": "Basiclayout",
+    "id": "grid",
+    "label": "表格",
+    "children": [
+      {
+        "path": "/grid/dynamicGrid",
+        "id": "dynamicGrid",
+        "component": "/grid/dynamicGrid",
+        "label": "动态表格"
+      }
+    ]
+  },
+  {
+    "path": "/chart",
+    "component": "Basiclayout",
+    "id": "chart",
+    "label": "图表",
+    "children": [
+      {
+        "path": "/chart/basicChart",
+        "id": "basicChart",
+        "component": "/chart/basicChart",
+        "label": "基本图表"
+      }
+    ]
   }
-  
 ]
