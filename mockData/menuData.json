@@ -9,14 +9,14 @@
       {
         "path": "/form/basicForm",
         "id": "basicForm",
-        "icon": null,
+        "icon": "form",
         "component": "/form/BasicForm.vue",
         "label": "基本表单"
       },
       {
         "path": "/form/validateForm",
         "component": "/form/ValidateForm.vue",
-        "icon": null,
+        "icon": "form",
         "label": "校验表单",
         "id": "ValidateForm"
       }
@@ -27,6 +27,7 @@
     "component": "Basiclayout",
     "id": "dashboard",
     "label": "仪表盘",
+    "icon": "dashboard",
     "children": [
       {
         "path": "/dashboard/analyze",
@@ -41,12 +42,21 @@
     "component": "Basiclayout",
     "id": "grid",
     "label": "表格",
+    "icon": "table",
     "children": [
       {
         "path": "/grid/dynamicGrid",
         "id": "dynamicGrid",
         "component": "/grid/dynamicGrid",
-        "label": "动态表格"
+        "label": "动态表格",
+        "icon": "table"
+      },
+      {
+        "path": "/grid/exportGrid",
+        "id": "exportGrid",
+        "component": "/grid/exportGrid",
+        "label": "表格导出（前端）",
+        "icon": "table"
       }
     ]
   },
@@ -61,6 +71,20 @@
         "id": "basicChart",
         "component": "/chart/basicChart",
         "label": "基本图表"
+      }
+    ]
+  },
+  {
+    "path": "/richEditor",
+    "component": "Basiclayout",
+    "id": "richEditor",
+    "label": "富文本编辑器",
+    "children": [
+      {
+        "path": "/richEditor/tiptap",
+        "id": "tiptap",
+        "component": "/richEditor/tiptap",
+        "label": "tiptap"
       }
     ]
   }

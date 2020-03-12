@@ -7,7 +7,7 @@
     },
     {
         "name":"age",
-        "width":300,
+        "width":200,
         "label":"年龄"
     },{
         "name":"startDate",
@@ -28,7 +28,7 @@
             "codevalue":"1"
         },{
             "codename":"女",
-            "codevalue":"0"
+            "codevalue":"2"
         }],
         "label":"性别"
     },{
