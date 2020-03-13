@@ -57,6 +57,13 @@
         "component": "/grid/exportGrid",
         "label": "表格导出（前端）",
         "icon": "table"
+      },
+      {
+        "path": "/grid/importGrid",
+        "id": "importGrid",
+        "component": "/grid/importGrid",
+        "label": "表格导入",
+        "icon": "table"
       }
     ]
   },
