@@ -94,5 +94,19 @@
         "label": "tiptap"
       }
     ]
+  },
+  {
+    "path": "/others",
+    "component": "Basiclayout",
+    "id": "others",
+    "label": "其他",
+    "children": [
+      {
+        "path": "/others/socket",
+        "id": "socket",
+        "component": "/others/socket",
+        "label": "socket"
+      }
+    ]
   }
 ]

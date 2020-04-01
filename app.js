@@ -1,3 +1,4 @@
+const getDynamicData = require("./mockData/chart/dynamicData.js");
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
@@ -6,6 +7,8 @@ app.use(bodyParser.json());
 const menuData = require("./mockData/menuData.json");
 const gridData = require("./mockData/grid/gridData.json");
 const gridStructure = require("./mockData/grid/gridStructure.json");
+const expressWs = require('express-ws');
+expressWs(app);
 //设置允许跨域访问该服务.
 app.all("*", function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -27,5 +30,18 @@ app.post("/downloadImg", (_req, res) => {
   var body = _req.body;
   res.send("aaaa");
 });
-
+app.ws('/socketTest', function (ws, req){
+  var sockedInterval = setInterval(()=>{
+    if(ws.readyState !== ws.OPEN){
+      clearInterval(sockedInterval);
+    }else{
+      ws.send(JSON.stringify(getDynamicData()));
+    }
+  },2000);
+  
+  ws.on('message', function (msg) {
+      // 业务代码
+      console.log("hahahah");
+  })
+})
 app.listen(3000, () => console.log("Example app listening on port 3000!"));
