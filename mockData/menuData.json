@@ -78,6 +78,11 @@
         "id": "basicChart",
         "component": "/chart/basicChart",
         "label": "基本图表"
+      },{
+        "path": "/chart/dynamicChart",
+        "id": "dynamicChart",
+        "component": "/others/socket",
+        "label": "动态图表"
       }
     ]
   },
